@@ -10,7 +10,7 @@ E para Alegria de todos, fiz o meu compilador automático!
 
 ## Como usar
 
-Para usar, basta digitar ".\auto.exe 'caminho_arquivo' 'compilador'" em seu terminal.
+Para usar, basta digitar ".\auto.exe caminho_arquivo compilador" em seu terminal.
 
 O compilador padrão, é o "g++".
 
