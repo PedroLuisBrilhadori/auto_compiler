@@ -16,6 +16,7 @@ void compile(int argc, string caminho, string compilador = "g++ ") {
 }
 
 int main(int argc, char * argv[]) {
+    char flag;
     if(argc == 2 || argc == 3){
         while(true){
             cout << "\n\n-------------------------------------------\n";
@@ -25,7 +26,11 @@ int main(int argc, char * argv[]) {
                 compile(argc, string(argv[1]), string(argv[2]));
             else
                 compile(argc, string(argv[1]));
-            system("pause");
+            cout << "Deseja continuar? [y/n] ";
+            fflush(stdin);
+            cin >> flag;
+            if(toupper(flag) == 'N')
+                break;
         }
     } else 
         cout << "Por favor, insira o caminho de seu codigo\n";
