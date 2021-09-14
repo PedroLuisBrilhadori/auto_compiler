@@ -8,6 +8,17 @@ E para Alegria de todos, fiz o meu compilador automático!
 
 ---------------------------------
 
+## Requisitos
+
+- É necessário um compilador de C++ instalado em seu sistema
+    
+    Se você não possue. Aqui está um link para baixar o MinGW, ele é a coleção de alguns compiladores (inclue o g++)
+        
+        https://sourceforge.net/projects/mingw/
+
+
+--------------------------------
+
 ## Como usar
 
 Para usar, basta digitar ".\auto.exe caminho_arquivo compilador" em seu terminal.
