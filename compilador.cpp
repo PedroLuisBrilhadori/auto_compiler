@@ -6,11 +6,11 @@ using namespace std;
 
 void compile(int argc, string caminho, string compilador = "g++ ") {
     if(argc == 2 || argc == 3){
-        string comando(compilador); 
-        char buffer[70];
-        comando += caminho + " -o run";
-        strcpy(buffer, comando.c_str()); // transforma o tipo string_basic em char * [] (tipo exigido pelo system())
-        system(buffer);
+        string comando_string(compilador); 
+        char comando_char[70];
+        comando_string += caminho + " -o run";
+        strcpy(comando_char, comando_string.c_str()); // transforma o tipo string_basic em char * [] (tipo exigido pelo system())
+        system(comando_char);
         system(".\\run.exe");
     }
 }
