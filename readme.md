@@ -15,4 +15,4 @@ Para usar, basta digitar ".\auto.exe caminho_arquivo compilador" em seu terminal
 O compilador padrão, é o "g++".
 
 ### Exemplo
-    .\auto.exe .\test.cpp
+    .\auto.exe .\test.cpp 
