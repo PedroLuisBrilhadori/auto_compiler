@@ -10,7 +10,7 @@ E para Alegria de todos, fiz o meu compilador automático!
 
 ## Como usar
 
-Para usar, basta digitar ".\auto.exe 'caminho_arquivo'" em seu windows powershell.
+Para usar, basta digitar ".\auto.exe 'caminho_arquivo'" em seu terminal.
 
 
 ### Exemplo
