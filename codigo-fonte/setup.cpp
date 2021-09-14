@@ -3,8 +3,8 @@
 using namespace std;
 
 void busca_atualizacoes() {
-    int teste = system("git pull");
-    cout << teste << endl;
+    // int teste = system("git pull");
+    // cout << teste << endl;
 }
 
 
