@@ -6,10 +6,10 @@ using namespace std;
 
 void compile(int argc, string caminho, string compilador = "g++ ") {
     if(argc == 2 || argc == 3){
-        string gpp(compilador); 
+        string comando(compilador); 
         char buffer[70];
-        gpp += caminho + " -o run";
-        strcpy(buffer, gpp.c_str());
+        comando += caminho + " -o run";
+        strcpy(buffer, comando.c_str()); // transforma o tipo string_basic em char * [] (tipo exigido pelo system())
         system(buffer);
         system(".\\run.exe");
     }
