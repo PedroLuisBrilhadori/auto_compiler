@@ -26,9 +26,9 @@ int main(int argc, char * argv[]) {
                 compile(argc, string(argv[1]), string(argv[2]));
             else
                 compile(argc, string(argv[1]));
-            cout << "Deseja continuar? [y/n] ";
+            cout << "Autinho: Deseja continuar? [Y/n] ";
             fflush(stdin);
-            cin >> flag;
+            cin.get(flag);
             if(toupper(flag) == 'N')
                 break;
         }
