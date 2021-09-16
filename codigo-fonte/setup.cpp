@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <cstring>
 
 using namespace std;
 
@@ -8,16 +9,11 @@ void busca_atualizacoes() {
     // int teste = system("git pull");
     // cout << teste << endl;
 }
-
 void criar_path(){
-
+    
 }
 
-void instalar_path(){
-
-}
-
-void compilador_config() {
+bool compilador_config() {
     char flag, flag2;
     bool config_compilador = false;
 
@@ -34,22 +30,24 @@ void compilador_config() {
             if(toupper(flag2) != 'N')
                 config_compilador = true;
             else{
-                cout << "Preciso de um compilador! Vamos tentar novamente\n"; 
-                fflush(stdin); getchar();
+                cout << "Vamos tentar novamente..."; 
+                fflush(stdin); getchar(); cout << "\n";
             }
         } else {
-            cout << "Vamos tentar novamente...\n"; 
-            fflush(stdin); getchar();
+            cout << "Preciso de um compilador!"; 
+            fflush(stdin); getchar(); cout << "\n";
+            exit(0);
         }
     } while(config_compilador == false);
     
-    
+    return config_compilador;
 }
 
 int main() {
     system("chcp 65001");
     system("cls");
     char verifica_att = 'y', flag, flag2;
+    bool config_compilador;
 
 
 
@@ -64,8 +62,9 @@ int main() {
         cout << "------------------------------------------\n\n"; 
     }
 
-    compilador_config();
-
+    if(compilador_config() == true){
+        criar_path();
+    }
 
     return 0;
 }
