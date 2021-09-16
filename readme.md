@@ -44,11 +44,11 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
     - coloque o aplicativo, junto do arquivo "auto.cmd".
     - depois digite em seu Windows Powershell:
     ```shell    
-    SETX PATH "(caminho da pasta);&PATH%"
+    SETX PATH "(caminho da pasta);%PATH%"
     ```
     Ex.
     ```shell
-    SETX PATH "C:\Program Files\Auto;&PATH%"
+    SETX PATH "C:\Program Files\Auto;%PATH%"
     ```
 
     Com esses passos, você instalou o programa no path do sistema, ou seja, pode acessa-lo de qualquer lugar!
