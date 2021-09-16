@@ -1,17 +1,31 @@
 #include <iostream>
 #include <cstring>
 #include <string>
+#include <Windows.h>
+
+#define VERMELHO     "\x1b[31m"
+#define VERDE   "\x1b[32m"
+#define AZUL    "\x1b[34m"
+#define RESET   "\x1b[0m"
 
 using namespace std;
 
 void compile(int argc, string caminho, string compilador = "g++ ") {
     if(argc == 2 || argc == 3){
+        int result;
+
         string comando_string(compilador); 
         char comando_char[70];
         comando_string += caminho + " -o run";
         strcpy(comando_char, comando_string.c_str()); // transforma o tipo string_basic em char * [] (tipo exigido pelo system())
-        system(comando_char);
-        system(".\\run.exe");
+        result = system(comando_char);
+        if( result == 0){
+            cout << VERDE << "√ " << RESET << "Compilado com sucesso!\n";
+            Sleep(2000);
+            system(".\\run.exe");
+        } else {
+            cout << VERMELHO << "ERROR: " << RESET << "Falha na Compilação\n";
+        }
     }
 }
 
@@ -26,9 +40,9 @@ int main(int argc, char * argv[]) {
                 compile(argc, string(argv[1]), string(argv[2]));
             else
                 compile(argc, string(argv[1]));
-            cout << "Deseja continuar? [y/n] ";
+            cout << "Autinho: Deseja continuar? [Y/n] ";
             fflush(stdin);
-            cin >> flag;
+            cin.get(flag);
             if(toupper(flag) == 'N')
                 break;
         }
