@@ -1,4 +1,5 @@
 #include <iostream> 
+#include <stdio.h>
 #include <cstring>
 
 using namespace std;
@@ -10,7 +11,28 @@ void busca_atualizacoes() {
     // cout << teste << endl;
 }
 void criar_path(){
+  FILE * arquivo_bat;
+    char flag, bat[45];
+
+    cout << "Deseja instalar o progama no caminho padrão? (C:\\Program Files\\Autinho) [Y/n] ";
+    fflush(stdin); cin.get(flag);
     
+    if(toupper(flag) != 'N'){
+        int result;
+
+        arquivo_bat = fopen("C:\\Program Files\\Autinho\\auto.cmd", "w");
+        
+        if(arquivo_bat == NULL)
+            cout << "Erro ao criar arquivo!\n";
+
+        strcpy(bat, "@echo off\nsetlocal\n%~dp0auto.exe\nendlocal");    
+        
+        result = fputs(bat, arquivo_bat); 
+        if(result == EOF){
+            cout << "Erro na gravação do arquivo\n";
+        }
+        fclose(arquivo_bat);
+    }
 }
 
 bool compilador_config() {
