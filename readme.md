@@ -25,13 +25,13 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
 
 ### Instalação Manual
 
-- Primeiro, é necesário clonar esse repositorio
+- Primeiro, é necesário clonar esse repositorio.
     
     ```shell
     git clone https://github.com/PedroLuisBrilhadori/auto_compiler.git
 
     ```
-- Depois, compile o arquivo "compilador.cpp"
+- Depois, compile o arquivo "compilador.cpp".
     ```shell
     g++ ./codigo-fonte/compilador.cpp -o auto.exe
     ```
@@ -42,7 +42,7 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
         Ex. C:\Program Files\Auto
 
     - coloque o aplicativo, junto do arquivo "auto.cmd".
-    - depois digite em seu powershell:
+    - depois digite em seu Windows Powershell:
     ```shell    
     SETX PATH "(caminho da pasta);&PATH%"
     ```
