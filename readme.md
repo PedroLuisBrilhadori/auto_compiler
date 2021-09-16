@@ -17,6 +17,45 @@ E para Alegria de todos, fiz o meu compilador automático!
         https://sourceforge.net/projects/mingw/
 
 
+-------------------------------
+
+## Instalador (Setup.exe)
+
+O Instalador está em processo de desenvolvimento, mas ele não é totalmente necessário. 
+
+### Instalação Manual
+
+- Primeiro, é necesário clonar esse repositorio
+    
+    ```shell
+            git clone https://github.com/PedroLuisBrilhadori/auto_compiler.git
+
+    ```
+- Depois, compile o arquivo "compilador.cpp"
+    ```shell
+        g++ ./codigo-fonte/compilador.cpp -o auto.exe
+    ```
+- Com o aplicativo compilado, já é possivel usa-lo, mas tem como melhorar.
+
+    - crie uma pasta no local que preferir.
+
+        Ex. C:\Program Files\Auto
+
+    - coloque o aplicativo, junto do arquivo "auto.cmd".
+    - depois digite em seu powershell:
+    ```shell
+        SETX PATH "(caminho da pasta);&PATH%"
+    ```
+    Ex.
+    ```shell
+        SETX PATH "C:\Program Files\Auto;&PATH%"
+    ```
+
+    Com esses passos, você instalou o programa no path do sistema, ou seja, pode acessa-lo de qualquer lugar!
+
+    basta digitar "auto" e utilizar o programa ;-) 
+
+
 --------------------------------
 
 ## Como usar
