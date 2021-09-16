@@ -28,12 +28,12 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
 - Primeiro, é necesário clonar esse repositorio
     
     ```shell
-            git clone https://github.com/PedroLuisBrilhadori/auto_compiler.git
+    git clone https://github.com/PedroLuisBrilhadori/auto_compiler.git
 
     ```
 - Depois, compile o arquivo "compilador.cpp"
     ```shell
-        g++ ./codigo-fonte/compilador.cpp -o auto.exe
+    g++ ./codigo-fonte/compilador.cpp -o auto.exe
     ```
 - Com o aplicativo compilado, já é possivel usa-lo, mas tem como melhorar.
 
@@ -43,12 +43,12 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
 
     - coloque o aplicativo, junto do arquivo "auto.cmd".
     - depois digite em seu powershell:
-    ```shell
-        SETX PATH "(caminho da pasta);&PATH%"
+    ```shell    
+    SETX PATH "(caminho da pasta);&PATH%"
     ```
     Ex.
     ```shell
-        SETX PATH "C:\Program Files\Auto;&PATH%"
+    SETX PATH "C:\Program Files\Auto;&PATH%"
     ```
 
     Com esses passos, você instalou o programa no path do sistema, ou seja, pode acessa-lo de qualquer lugar!
