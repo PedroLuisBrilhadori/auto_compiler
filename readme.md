@@ -65,4 +65,9 @@ Para usar, basta digitar "auto caminho_arquivo compilador" em seu terminal.
 O compilador padrão, é o "g++".
 
 ### Exemplo
+
+Primeiro entre na pasta "Programa".
+
+Depois execute o comando:
+
     auto .\test.cpp 
