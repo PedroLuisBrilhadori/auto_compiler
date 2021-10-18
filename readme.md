@@ -12,9 +12,10 @@ E para Alegria de todos, fiz o meu compilador automático!
 
 - É necessário um compilador de C++ instalado em seu sistema
     
-    Se você não possue. Aqui está um link para baixar o MinGW, ele é a coleção de alguns compiladores (inclue o g++)
+    Se você não possue. Baixe usando seu instalador de pacotes;
+    Exemplo: 
         
-        https://sourceforge.net/projects/mingw/
+        sudo apt install g++
 
 
 -------------------------------
@@ -33,24 +34,23 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
     ```
 - Depois, compile o arquivo "compilador.cpp".
     ```shell
-    g++ ./codigo-fonte/compilador.cpp -o auto.exe
+    g++ ./codigo-fonte/compilador.cpp -o auto
     ```
 - Com o aplicativo compilado, já é possivel usa-lo, mas tem como melhorar.
 
-    - crie uma pasta no local que preferir.
+    - crie uma pasta nos binários do sistema.
 
-        Ex. C:\Program Files\Auto
+            sudo mkdir /usr/bin/auto
 
-    - coloque o aplicativo, junto do arquivo "auto.cmd".
-    - depois digite em seu Windows Powershell:
+    - jogue o arquivo compilado para a pasta 
+
+            sudo mv auto /usr/bin/auto
+
+    - depois digite em seu terminal:
+
     ```shell    
-    SETX PATH "(caminho da pasta);%PATH%"
+    export PATH=$PATH:/usr/bin/auto
     ```
-    Ex.
-    ```shell
-    SETX PATH "C:\Program Files\Auto;%PATH%"
-    ```
-
     Com esses passos, você instalou o programa no path do sistema, ou seja, pode acessa-lo de qualquer lugar!
 
     basta digitar "auto" e utilizar o programa ;-) 
