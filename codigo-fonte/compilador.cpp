@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstring>
 #include <string>
-#include <Windows.h>
 
 #define VERMELHO     "\x1b[31m"
 #define VERDE   "\x1b[32m"
@@ -21,8 +20,7 @@ void compile(int argc, string caminho, string compilador = "g++ ") {
         result = system(comando_char);
         if( result == 0){
             cout << VERDE << "√ " << RESET << "Compilado com sucesso!\n";
-            Sleep(2000);
-            system(".\\run.exe");
+            system("./run");
         } else {
             cout << VERMELHO << "ERROR: " << RESET << "Falha na Compilação\n";
         }
