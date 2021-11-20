@@ -19,10 +19,6 @@ E para Alegria de todos, fiz o meu compilador automático!
 
 -------------------------------
 
-## Instalador (Setup.exe)
-
-O Instalador está em processo de desenvolvimento, mas ele não é totalmente necessário. 
-
 ### Instalação Manual
 
 - Primeiro, é necesário clonar esse repositorio.
