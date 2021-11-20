@@ -14,9 +14,9 @@ E para Alegria de todos, fiz o meu compilador automático!
     
     Se você não possue. Baixe usando seu instalador de pacotes;
     Exemplo: 
-        
-        sudo apt install g++
-
+    ```shell
+    sudo apt install g++
+    ```
 
 -------------------------------
 
@@ -37,19 +37,8 @@ O Instalador está em processo de desenvolvimento, mas ele não é totalmente ne
     g++ ./codigo-fonte/compilador.cpp -o auto
     ```
 - Com o aplicativo compilado, já é possivel usa-lo, mas tem como melhorar.
-
-    - crie uma pasta nos binários do sistema.
-
-            sudo mkdir /usr/bin/auto
-
-    - jogue o arquivo compilado para a pasta 
-
-            sudo mv auto /usr/bin/auto
-
-    - depois digite em seu terminal:
-
-    ```shell    
-    export PATH=$PATH:/usr/bin/auto
+    ```shell
+    sudo mv auto /usr/bin/
     ```
     Com esses passos, você instalou o programa no path do sistema, ou seja, pode acessa-lo de qualquer lugar!
 
