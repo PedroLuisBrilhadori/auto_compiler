@@ -16,7 +16,7 @@ void compile(int argc, string caminho, string compilador = "g++ ") {
 
         string comando_string(compilador); 
         char comando_char[70];
-        comando_string += caminho + " -o run";
+        comando_string += caminho + " -o run.exe";
         strcpy(comando_char, comando_string.c_str()); // transforma o tipo string_basic em char * [] (tipo exigido pelo system())
         result = system(comando_char);
         if( result == 0){
