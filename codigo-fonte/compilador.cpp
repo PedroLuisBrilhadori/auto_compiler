@@ -40,6 +40,8 @@ int main(int argc, char * argv[]) {
                 compile(argc, string(argv[1]), string(argv[2]));
             else
                 compile(argc, string(argv[1]));
+            
+            system("del .\\run.exe");
             cout << "Autinho: Deseja continuar? [Y/n] ";
             fflush(stdin);
             cin.get(flag);
